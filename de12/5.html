@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>第5回</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/xbp.ico">
+</head>
+<body>
+    <logotohome>
+    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
+    </logotohome>
+    <h2>第5回</h2>
+    <h3>ゲーム内容＝数字当てゲーム</h3>
+    <h4>１から５０までの数字を当てるというシンプルなゲーム<br>
+        5回までチャンスがある
+    </h4>
+    <code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;">import random</li>
+        <li style="background-color:#EEF;">secretNumber=random.randint(0,50)</li>
+        <li style="background-color:#EFF;">print("0-50の数字を選んでください")</li>
+        <li style="background-color:#EEF;">times = 5</li>
+        <li style="background-color:#EFF;">for i in range(1,6):</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print ("当ててみましょう")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;guess=int(input())</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if guess&lt;secretNumber:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("もっと大きい")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times+=1</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif guess&gt;secretNumber:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("もっと小さい")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times += 1</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times += 1</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</li>
+        <li style="background-color:#EFF;">if guess==secretNumber:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("　正解　")</li>
+        <li style="background-color:#EFF;">else:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("　不正解　")</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        </ol></code>
+<br>
+<br>
+
+
+</body>
+</html>
