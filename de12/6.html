@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>第5回</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/xbp.ico">
+</head>
+<body>
+    <logotohome>
+    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
+    </logotohome>
+    <h2>第6回</h2>
+    <h3>家計簿アプリ</h3>
+    <code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;">def first():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("今月の収入を入力してください。")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;income_input = str(input())</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("今月の収入は"+ income_input +"円です。")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;return income_input</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">def second():</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("今月の支出を入力してください。")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;def put_second():</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;post = {}</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("支払いの内訳を入力してください。(例；お菓子、、、など)")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;post["pay"] = input()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("金額を入力してください。(例；１０８)")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;post["money"] = input()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(post["pay"]+"   :   "+"?"+post["money"])</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;posts.append(post)</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return posts</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;def other_second():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("入力された値は無効な値です。")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;while True:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("[0]  : 入力する。")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("[1]  : 入力を終える。")</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub_input = int(input())</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if sub_input == 0:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;put_second()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif sub_input == 1:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other_second()</li>
+        <li style="background-color:#EEF;">def third():</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[  今月の支出内訳一覧を表示します  ]")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;for i,post in enumerate(posts):</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("["+str(i)+"]   :"+post['pay']+"     :      "+post['money'])</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">def fourth(income_input):</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;remain = income_input - sum(posts)</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if remain &lt;= 0:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("残金がありません。")</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">def end():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;exit()</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">def exeption():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("入力された値は無効な値です。")</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">posts = []</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">income_input = 0</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">while True:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[0]今月の収入を入力する")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[1]今月の支出を入力する")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[2]今月の支出内訳を見る")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[3]残金を確認する")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("[4]アプリを終了する")</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;main_input = int(input())</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if main_input == 0:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;income_input = first()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif main_input == 1:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;second()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif main_input == 2:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;third()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif main_input == 3:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fourth(income_input)</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif main_input == 4:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end()</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exeption()</li>
+        </ol></code> 
+   <img src="images/123.png" width="50%"><br>
+   <div>3を入力するとなぜかエラーになってしまう。<br>
+    対処方法がわからず中途半端な形で終わってしまった。
+
+   </div>
+
+
+</body>
+</html>
