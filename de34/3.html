@@ -1,100 +1,61 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-    <!-- ⑥↓タイトルを変えてみよう -->
-    <title>第３回</title>
-    <!-- ⑤スタイルシートの設定をしよう -->
-    <!-- h1.htmlからある行をコピペしてくればOK -->
-    
     
 </head>
-
 <body>
-  
-    <h1>第３回　</h1><br>
-    <br>
-    <br>
-    <h3>コード</h3>
+    <h1>第3回Assignment</h1>
 
-    <code>
-        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
-        <li style="background-color:#EFF;">const int DIR  = 8;</li>
-        <li style="background-color:#EEF;">const int STEP = 9;</li>
-        <li style="background-color:#EFF;"></li>
-        <li style="background-color:#EEF;">void setup() {</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;pinMode(DIR, OUTPUT);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;pinMode(STEP, OUTPUT);</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
-        <li style="background-color:#EFF;">}</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;</li>
-        <li style="background-color:#EFF;">void loop() {</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;// put your main code here, to run repeatedly:</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;int val=0;</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;val=analogRead(1);</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;Serial.println(val);</li>
-        <li style="background-color:#EEF;"></li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;if(val&lt;200){</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;for(int i=0; i&lt;=300; i++){</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clockwise(5000);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;}</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
-        <li style="background-color:#EEF;">}</li>
-        <li style="background-color:#EFF;"></li>
-        <li style="background-color:#EEF;">void clockwise(int delaytime){</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, HIGH);//HIGHは時計回り</li>
-        <li style="background-color:#EEF;"></li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
-        <li style="background-color:#EFF;"></li>
-        <li style="background-color:#EEF;">}</li>
-        <li style="background-color:#EFF;"></li>
-        <li style="background-color:#EEF;">void counter_clockwise(int delaytime){</li>
-        <li style="background-color:#EFF;"></li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);//はLOWは反時計回り</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
-        <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
-        <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
-        <li style="background-color:#EFF;">}</li>
-        </ol></code><br>
-        <br>
-        <br>
-        <h2>HMWとYes,and</h2><br> 
-        <h4>僕たちの班は自分の部屋にたまる飲みかけのペットボトルに対する負の感情について話し合いました<br></h4>
-        <img src="images/postit3.png" width="50%"><br>
-        <img src="images/postit4.png" width="50%"><br>
-       
+    <div>
+        <h2>・コード</h2>
+        <ul>
+         <li><code>
+            <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+            <li style="background-color:#EFF;">const int DIR = 8;</li>
+            <li style="background-color:#EEF;">const int STEP = 9;</li>
+            <li style="background-color:#EFF;">void setup() {</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;pinMode(DIR, OUTPUT);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;pinMode(STEP, OUTPUT);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+            <li style="background-color:#EEF;">}</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;</li>
+            <li style="background-color:#EEF;">void loop() {</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;// put your main code here, to run repeatedly:</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;int val=0;</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;val=analogRead(1);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;Serial.println(val);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;if(val&lt;200){</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;for(int i=0; i&lt;=300; i++){</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clockwise(5000);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
+            <li style="background-color:#EEF;">}</li>
+            <li style="background-color:#EFF;">void clockwise(int delaytime){</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(DIR, HIGH);//HIGHは時計回り</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+            <li style="background-color:#EFF;">}</li>
+            <li style="background-color:#EEF;">void counter_clockwise(int delaytime){</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);//はLOWは反時計回り</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+            <li style="background-color:#EEF;">}</li>
+            </ol></code></li>
+        </ul>
+    
+    </div>
 
-        
-
-
-
-
-
-
-
-
-
-  
-   
-   
-
-             
-         
-         
-
-
-   
-
-
-
-         
-         
-
-
-   
-</body>
+    <div>
+        <h2>・グループワーク</h2>
+        <ul>
+            <li><img src="images/postit3.png" width="35%"> </li>
+        </ul>
+    </div>
+    
+<body>    
 </html>
